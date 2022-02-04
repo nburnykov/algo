@@ -1,3 +1,7 @@
+###############################################################################################################
+# Programming problem 15.9. Algorithms Illuminated. Part 2 by Tim Roughgarden
+###############################################################################################################
+
 from typing import List, Union, Iterable
 
 
@@ -39,7 +43,7 @@ def mst_kruskal_basic(edge_list: List[tuple]) -> list:
     :return: mst as list of edges
     """
     el = edge_list.copy()
-    el = sorted(el, key=lambda x: x[0])  # this optimisation doesn't hurt anybody but speeds up the search
+    el = sorted(el, key=lambda x: x[0])  # a crucial thing for fast MST construction
 
     uf = UnionFind(set([x for item in edge_list for x in item[1:]]))
 
@@ -53,11 +57,3 @@ def mst_kruskal_basic(edge_list: List[tuple]) -> list:
     return mst_edge_list
 
 
-def kruskal_union_find():
-    """
-
-    :param edge_list: list of graph edges with every item as tuple (edge_cost, vertex_a, vertex_b)
-    :param start_vertex: start vertex id
-    :return: mst as list of edges
-    """
-    pass
