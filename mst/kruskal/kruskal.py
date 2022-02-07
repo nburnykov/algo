@@ -6,6 +6,9 @@ from typing import List, Union, Iterable
 
 
 class UnionFind:
+    """
+    TODO add description
+    """
     def __init__(self, node_list: Iterable[Union[str, int]]):
         self.area_map = {node: node for node in node_list}
 
@@ -37,7 +40,7 @@ class UnionFind:
 
 def mst_kruskal_basic(edge_list: List[tuple]) -> list:
     """
-
+    TODO add description
     :param edge_list: list of graph edges with every item as tuple (edge_cost, vertex_a, vertex_b)
     :param start_vertex: start vertex id
     :return: mst as list of edges
@@ -50,7 +53,7 @@ def mst_kruskal_basic(edge_list: List[tuple]) -> list:
     mst_edge_list = []
 
     for cost, v_a, v_b in el:
-        if uf.get_root(v_a)[0] != uf.get_root(v_b)[0]:
+        if not uf.is_same_root(v_a, v_b):
             uf.union(v_a, v_b)
             mst_edge_list.append((cost, v_a, v_b))
 
