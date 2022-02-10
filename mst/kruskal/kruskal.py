@@ -7,7 +7,7 @@ from typing import List, Union, Iterable
 
 class UnionFind:
     """
-    TODO add description
+    A class that implements node clustering
     """
     def __init__(self, node_list: Iterable[Union[str, int]]):
         self.area_map = {node: node for node in node_list}
@@ -40,7 +40,8 @@ class UnionFind:
 
 def mst_kruskal_basic(edge_list: List[tuple]) -> list:
     """
-    TODO add description
+    A Kruskal's MST algorithm implementation based on union find structure
+
     :param edge_list: list of graph edges with every item as tuple (edge_cost, vertex_a, vertex_b)
     :param start_vertex: start vertex id
     :return: mst as list of edges
