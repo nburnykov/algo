@@ -4,10 +4,20 @@
 
 def needleman_wunsch(sequence_one: str, sequence_two: str) -> (str, str):
     """
+    Another famous example of dynamic programming
+    An algo that performs an alignment of two sequences
+    For example
 
-    :param sequence_one:
-    :param sequence_two:
-    :return:
+    Before:       After:
+    ACGGCTC    -> ACGGCT-C
+    ATGGCCTC   -> ATGGCCTC
+
+    AGGTTCCA   -> AGGTTCCA
+    ATA        -> A--T---A
+
+    :param sequence_one: first sequence
+    :param sequence_two: second sequence
+    :return: a tuple with two aligned sequences
     """
     _sequence_one = '-' + sequence_one
     _sequence_two = '-' + sequence_two
