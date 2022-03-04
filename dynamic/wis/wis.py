@@ -1,5 +1,5 @@
 ###############################################################################################################
-# Programming problem 16.6. Algorithms Illuminated. Part 2 by Tim Roughgarden
+# Programming problem 16.6. Algorithms Illuminated. Part 3 by Tim Roughgarden
 ###############################################################################################################
 from typing import Union
 

@@ -1,5 +1,5 @@
 ###############################################################################################################
-# Programming problem 17.8. Algorithms Illuminated. Part 2 by Tim Roughgarden
+# Programming problem 17.8. Algorithms Illuminated. Part 3 by Tim Roughgarden
 ###############################################################################################################
 
 def needleman_wunsch(sequence_one: str, sequence_two: str) -> (str, str):
