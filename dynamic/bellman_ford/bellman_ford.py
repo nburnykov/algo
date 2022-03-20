@@ -26,6 +26,8 @@ def bellman_ford(adjacency_list: List[Tuple[int, int, int]], vertex: int) -> Lis
                 weight_best, v_best = min(weight_candidates, key=lambda x: x[0])
                 _weights[i][j] = weight_best
                 _vertex_hop[j] = v_best
+        if _weights[i] == _weights[i-1]:
+            break  # early stopping
 
     result = []
     for i in range(len(_vertex_hop)):  # reconstruction part
