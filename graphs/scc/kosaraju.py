@@ -1,3 +1,7 @@
+###############################################################################################################
+# Programming problem 8.10. Algorithms Illuminated. Part 2 by Tim Roughgarden
+###############################################################################################################
+
 from typing import List
 from graphs.toposort.toposort import topsort, dfs_sort
 
